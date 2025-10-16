@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.names-page{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap:20px;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.title{
+    height:10vh;
+}
+
+.title-h1{
+    padding-left: 70px;
+    padding-top: 30px;
+}
+
+.users-panel{
+    flex:1;
+    overflow-y: auto;
+    padding-top: 10px;
+    height: 70vh;
+
+}
+
+.users-panel .user-details:hover{
+    background-color: rgba(0, 0, 0, 0.079);
+    border-radius: 15px;
+}
+.btn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding-right: 7px;
+    z-index: 10;
+
+}
+
+.add-btn{
+    width:60px;
+    height: 60px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.25 ease;
+}
+
+.add-btn:hover{
+    transform: scale(1.1);
+}

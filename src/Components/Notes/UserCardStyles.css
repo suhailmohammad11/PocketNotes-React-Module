@@ -1,0 +1,29 @@
+
+
+.user-details{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:20px;
+    padding:10px 40px;
+}
+
+.user-details p{
+    font-size:1.4em;
+    font-weight:600;
+    color:black;
+
+}
+.user-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+}
+.user-icon p{
+    text-transform: uppercase;
+    color: white;
+    font-size: large;
+}

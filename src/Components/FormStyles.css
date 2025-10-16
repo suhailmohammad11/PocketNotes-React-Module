@@ -1,0 +1,206 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap:20px;
+}
+
+.color-panels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-panels button {
+    cursor: pointer;
+}
+
+#group-panel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+}
+
+#group-panel input {
+    border-radius: 15px;
+    width: 220px;
+    height: 30px;
+    padding-inline: 10px;
+}
+
+#panel-label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+#first-color {
+    background-color: rgb(179, 139, 250);
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+}
+
+#second-color {
+    background-color: violet;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+
+}
+
+#third-color {
+    background-color: rgb(67, 230, 252);
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+
+}
+
+#fourth-color {
+    background-color: rgb(241, 149, 118);
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+
+}
+
+#fifth-color {
+    background-color: rgb(0, 71, 255);
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+
+
+}
+
+#sixth-color {
+    background-color: rgb(102, 145, 255);
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+
+}
+
+.create-btn-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#create-btn {
+    padding: 3px;
+    width: 80px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+
+
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px 30px;
+    box-shadow: 0 40px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: left;
+}
+
+@media(max-width:400px) {
+    .form-container {
+        width: 320px;
+        padding: 10px 20px;
+        height: 210px;
+        padding-inline: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+        padding-top: 10px;
+    }
+    .labels {
+        width: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #group-panel {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    #group-panel input {
+        border-radius: 15px;
+        width: 155px;
+        height: 30px;
+        padding-inline: 10px;
+    }
+
+    #panel-label {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    .color-panels {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .create-btn-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 27px;
+    }
+
+    #create-btn {
+        /* padding: 3px; */
+        width: 170px;
+        height:35px;
+        background-color: rgb(22,0,239);
+        color: white;
+        border-radius: 5px;
+    }
+
+}
