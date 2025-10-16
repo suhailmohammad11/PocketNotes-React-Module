@@ -29,15 +29,15 @@ const NewNotes = ({ userId }) => {
           value={text}
           onChange={handleText}
           placeholder="Here's the sample text for sample work"
-          onKeyDown={(e)=>{
-            if(e.key==="Enter" && !e.shiftKey){
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
               e.preventDefault();
               handleAddNote();
             }
           }}
         />
         <div className="send-btn-div">
-          <img 
+          <img
             onClick={handleAddNote}
             id="send-btn"
             src="send-button.png"

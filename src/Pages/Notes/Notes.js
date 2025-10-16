@@ -4,7 +4,7 @@ import { Data } from "../../Context/UserContext";
 import UserCard from "../../Components/Notes/UserCard";
 import NewNotes from "../../Components/Notes/NewNotes";
 const Notes = () => {
-  const { users, activeUserId , handleArrow } = useContext(Data);
+  const { users, activeUserId, handleArrow } = useContext(Data);
   const activeUser = users.find((u) => u.id === activeUserId);
 
   if (!users || users.length === 0 || !activeUser) {
@@ -30,7 +30,12 @@ const Notes = () => {
       <div className="notes-page2">
         <div className="notes-div">
           <div className="user-session">
-            <img src="arrow.png" alt="back-image" id="back-arrow" onClick={handleArrow} />
+            <img
+              src="arrow.png"
+              alt="back-image"
+              id="back-arrow"
+              onClick={handleArrow}
+            />
             <UserCard
               groupName={activeUser.groupName}
               color={activeUser.color}

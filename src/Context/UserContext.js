@@ -34,8 +34,12 @@ export const UserContextProvider = ({ children }) => {
     }
   });
 
-  function capitalizeEachWord(word){
-    return word.trim().split(" ").map(w=>w.charAt(0).toUpperCase()+ w.slice(1).toLowerCase()).join(" ");
+  function capitalizeEachWord(word) {
+    return word
+      .trim()
+      .split(" ")
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+      .join(" ");
   }
   const [activeUserId, setActiveUserId] = useState(null);
 
@@ -93,6 +97,7 @@ export const UserContextProvider = ({ children }) => {
     setUsers(updatedUsers);
   };
 
+  //Storing users in browser local storage
   useEffect(() => {
     localStorage.setItem("users", JSON.stringify(users));
   }, [users]);

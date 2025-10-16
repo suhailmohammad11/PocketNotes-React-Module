@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./NameStyles.css";
 import { Data } from "../../Context/UserContext";
-import Form from "../../Components/Form";
+import Form from "../../Components/newUserName";
 import UserCard from "../../Components/Notes/UserCard";
 const Names = () => {
   const { users, showForm, setShowForm, setShowNotes, setActiveUserId } =
